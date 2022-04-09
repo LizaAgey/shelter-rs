@@ -192,6 +192,16 @@ a {
     text-decoration: none;
 }
 
+.right-title {
+    @include h3;
+    color: $color-dark-l;
+    margin: 0;
+}
+
+.right-paragraph {
+    @include paragraph-l;
+    color: $color-dark-xl;
+}
 
 
 
@@ -313,7 +323,22 @@ header {
 .section-about {
     background: $color-light-xl;
 
+    .wrapper-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        margin-right: $base * 31;
+    }
+
+    .right-description {
+        width: $base * 107;
+        height: $base * 95;
+    }
 }
+
+
 
 // === 3 - SLIDER ===
 .section-slider {
@@ -330,7 +355,34 @@ header {
 // === 5 - DONATION ===
 .section-donation {
     background: $color-light-l;
+
+    .wrapper-inner {
+        display: flex;
+
+
+        img {
+            margin-left: $base * 46;
+            margin-right: $base * 7;
+        }
+    }
 }
+
+.right-subtitle {
+    @include h5;
+    color: $color-dark-l;
+}
+
+.legal-information {
+    @include poppins;
+    font-weight: $fw-regular;
+    font-style: $fs-italic;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-dark-m;
+
+}
+
+
 
 // === 6 - FOOTER ===
 .section-footer {
