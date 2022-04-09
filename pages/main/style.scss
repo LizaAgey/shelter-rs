@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//=== Mixin ===
+
+//Arial font
+@mixin poppins{
+    font-family: 'Poppins', sans-serif;
+}
+//Georgia font
+@mixin tinos{
+    font-family: 'Tinos', serif;
+}
+
+@mixin h2 {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+@mixin h3 {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h3-mobile {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h4 {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h5 {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h5-modal-window {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-bold;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin paragraph-l {
+    @include poppins;
+    font-style: $fs-normal;
+    font-weight: $fw-bold;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    @include poppins;
+    font-style: $fs-italic;
+    font-weight: $fw-italic;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+@mixin paragraph-mobile-menu {
+    @include poppins;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 32px;
+    line-height: 160%;
+}
+
+@mixin logo-title {
+    @include tinos;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin logo-subtitle {
+    @include poppins;
+    font-style: $fs-normal;
+    font-weight: $fw-regular;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+}
+
+
+//=== Variables ===
+$fw-regular: 400;
+$fw-italic: 400;
+$fw-bold: 700;
+
+$fs-normal: normal;
+$fs-italic: italic;
+
+
+$base: 4px;
+$padding-vertical-top: $base * 20;
+$padding-vertical-bottom: $base * 25;
+
+$bg-color-dark: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+$color-light-s: #FAFAFA;
+$color-light-l: #F6F6F6;
+$color-light-xl: #FFFFFF;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #000000;
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+
+
+
+
+
+//=== Common ===
+
+body {
+    @include poppins;
+}
+.wrapper-outer {
+
+}
+.wrapper-inner {
+    max-width: $base * 300;
+    margin: 0 auto;
+    padding-top: $padding-vertical-top;
+    padding-bottom: $padding-vertical-bottom;
+}
+
+
+
+
+
+
+
+
+// === 1 - START SCREEN ===
+.section-introduction {
+    background: $bg-color-dark;
+    .wrapper-inner {
+        padding-top: $base * 15;
+        padding-bottom: $base * 60;
+
+        .title {
+            @include logo-title;
+            color: $color-primary;
+        }
+        .subtitle {
+            @include logo-subtitle;
+            color: $color-light-xl;
+        }
+    }
+}
+// === 2 - ABOUT ===
+.section-about {
+    background: $color-light-xl;
+
+}
+// === 3 - SLIDER ===
+.section-slider {
+    background: $color-light-l;
+
+}
+// === 4 - HELP ===
+.section-help {
+    background: $color-light-xl;
+
+}
+// === 5 - DONATION ===
+.section-donation {
+    background: $color-light-l;
+}
+// === 6 - FOOTER ===
+.section-footer {
+    background: $bg-color-dark;
+    .wrapper-inner {
+        padding-top: $base * 10;
+        padding-bottom: $base * 15;
+    }
+}

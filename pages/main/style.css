@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.section-introduction {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.section-introduction .wrapper-inner {
+  padding-top: 60px;
+  padding-bottom: 240px;
+}
+
+.section-introduction .wrapper-inner .title {
+  font-family: 'Tinos', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.section-introduction .wrapper-inner .subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.section-about {
+  background: #FFFFFF;
+}
+
+.section-slider {
+  background: #F6F6F6;
+}
+
+.section-help {
+  background: #FFFFFF;
+}
+
+.section-donation {
+  background: #F6F6F6;
+}
+
+.section-footer {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.section-footer .wrapper-inner {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+/*# sourceMappingURL=style.css.map */
