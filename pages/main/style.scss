@@ -212,6 +212,7 @@ $transition: .2s;
 
 body {
     @include poppins;
+
 }
 
 .wrapper-outer {}
@@ -225,6 +226,7 @@ body {
 
 a {
     text-decoration: none;
+   
 }
 
 .right-title {
@@ -558,9 +560,11 @@ header {
 
 .card-number {
     @include h4;
-    color: $color-dark-l;
     padding-left: 15px;
-
+    
+    a {
+    color: $color-dark-l;
+    }
 }
 
 .donation-icon {

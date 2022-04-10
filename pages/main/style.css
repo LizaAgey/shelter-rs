@@ -493,8 +493,11 @@ header {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #545454;
   padding-left: 15px;
+}
+
+.card-number a {
+  color: #545454;
 }
 
 .donation-icon {
